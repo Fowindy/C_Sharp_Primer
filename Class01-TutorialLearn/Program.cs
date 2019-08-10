@@ -60,10 +60,11 @@ namespace Class01_TutorialLearn
             System.Console.WriteLine(str3);
 
             //输入与输出
-            //案例:我输入什么电脑输出什么
+            //案例2:与电脑进行交互_WriteLine换行
             string str5;
+            System.Console.WriteLine("你的名字是:");//WriteLine换行
             str5 = System.Console.ReadLine();
-            System.Console.WriteLine(str5);
+            System.Console.WriteLine("我的名字是:{0}",str5);
             System.Console.ReadKey();
             /*
              * 变量名的命名规则参见图1
