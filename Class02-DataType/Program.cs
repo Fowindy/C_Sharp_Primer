@@ -103,6 +103,12 @@ namespace Class02_DataType
 
             a1 = (int)b;//255
             Console.WriteLine(a1);
+
+            //数据转换:溢出异常
+            int a2 = int.MaxValue;
+            a2 += 1;
+            Console.WriteLine(a2);//-2147483648 //溢出
+
             Console.Read();
         }
     }
