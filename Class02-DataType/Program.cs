@@ -32,6 +32,11 @@ namespace Class02_DataType
             //char类型(单引号,只存储一个字符)
             string str = "123";
             char ch = '1';
+
+            //关于转义字符(\n换行)
+            string str1 = "123\n123";//换行
+            char ch1 = '\n';
+            Console.WriteLine(str1);
             Console.Read();
         }
     }
