@@ -20,6 +20,10 @@ namespace Class02_DataType
             //字面值(指数形式E代表以10为底)
             double a = 2E10;//20000000000   //2*10^10
             Console.WriteLine(a);
+
+            //字面值(十六进制)
+            int b = 0xff;
+            Console.WriteLine(b);//255
             Console.Read();
         }
     }
