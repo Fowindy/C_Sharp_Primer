@@ -123,10 +123,13 @@ namespace Class02_DataType
             b4 = a4;
             Console.WriteLine(b4);//2
 
-            //Parse用法(不用)_string字符串连接
+            //Parse用法:字符串的解析转换(如转换不成功则报异常)
             var str11 = Console.ReadLine();//34//因ReadLine的返回值已确定为string,所以可用var
             var str12 = Console.ReadLine();//56
-            Console.WriteLine(str11 + str12);//3456   //字符串连接
+            int a11 = int.Parse(str11);//34
+            int a12 = int.Parse(str12);//56
+            Console.WriteLine(str11 + str12);//3456  //字符串连接
+            Console.WriteLine(a11 + a12);//90   //字符串连接
             Console.Read();
         }
     }
