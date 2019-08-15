@@ -96,6 +96,13 @@ namespace Class02_DataType
 
             //var 隐式类型(可以根据具体的值推断出来是什么类型)
             var num = 123.678;
+
+            //数据转换:从高到低(禁用:会丢失精度)
+            int a1 = 1;
+            long b1 = 12;
+
+            a1 = (int)b;//255
+            Console.WriteLine(a1);
             Console.Read();
         }
     }
