@@ -50,6 +50,10 @@ namespace Class02_DataType
             //关于转义字符2(电脑叫一下使用\a)
             string str5 = "12345\a1234";
             Console.WriteLine(str5);
+
+            //关于嵌入转义字符@(一般用于路径,作用:忽略转义)
+            string str6 = @"J:\Documents\学习笔记\学习截图";
+            Console.WriteLine(str6);//J:\Documents\学习笔记\学习截图
             Console.Read();
         }
     }
