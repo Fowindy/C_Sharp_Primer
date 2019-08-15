@@ -54,6 +54,11 @@ namespace Class02_DataType
             //关于嵌入转义字符@(一般用于路径,作用:忽略转义)
             string str6 = @"J:\Documents\学习笔记\学习截图";
             Console.WriteLine(str6);//J:\Documents\学习笔记\学习截图
+
+            //字符串的点方法(ToUpper方法将目标字符转换成大写(字符串不可变性:转换失败))
+            string str7 = "abc";
+            str7.ToUpper();//ToUpper方法将目标字符转换成大写
+            Console.WriteLine(str7);//abc
             Console.Read();
         }
     }
