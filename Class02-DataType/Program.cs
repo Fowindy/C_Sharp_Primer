@@ -86,6 +86,9 @@ namespace Class02_DataType
             //类型的分类:
             //值类型:所有基本类型都是
             //引用类型:目前为止string
+
+            //null没有引用任何有效对象(null专用于引用类型)
+            string str10 = string.Empty;//string.Empty等价于''
             Console.Read();
         }
     }
