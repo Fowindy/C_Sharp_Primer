@@ -42,6 +42,10 @@ namespace Class02_DataType
             //关于转义字符1(输出\t使用\\t)
             string str3 = "12345\\t1234";
             Console.WriteLine(str3);//12345\t1234
+
+            //关于转义字符1(输出"使用\")
+            string str4 = "12345\"1234";
+            Console.WriteLine(str4);//12345"1234
             Console.Read();
         }
     }
