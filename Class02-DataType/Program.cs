@@ -122,6 +122,11 @@ namespace Class02_DataType
             long b4 = 2345;
             b4 = a4;
             Console.WriteLine(b4);//2
+
+            //Parse用法(不用)_string字符串连接
+            var str11 = Console.ReadLine();//34//因ReadLine的返回值已确定为string,所以可用var
+            var str12 = Console.ReadLine();//56
+            Console.WriteLine(str11 + str12);//3456   //字符串连接
             Console.Read();
         }
     }
