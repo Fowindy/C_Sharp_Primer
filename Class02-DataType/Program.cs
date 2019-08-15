@@ -24,6 +24,14 @@ namespace Class02_DataType
             //字面值(十六进制)
             int b = 0xff;
             Console.WriteLine(b);//255
+
+            //bool类型(true/false)
+            bool isCool = true;
+            Console.WriteLine(isCool);//True
+
+            //char类型(单引号,只存储一个字符)
+            string str = "123";
+            char ch = '1';
             Console.Read();
         }
     }
