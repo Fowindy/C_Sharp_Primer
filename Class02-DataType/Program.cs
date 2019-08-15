@@ -93,6 +93,9 @@ namespace Class02_DataType
 
             //可空类型2(专用于值类型(值类型后加?)_多用于数据库)
             int? number = null;//多用于数据库
+
+            //var 隐式类型(可以根据具体的值推断出来是什么类型)
+            var num = 123.678;
             Console.Read();
         }
     }
