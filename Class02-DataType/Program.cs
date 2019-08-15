@@ -59,6 +59,11 @@ namespace Class02_DataType
             string str7 = "abc";
             str7.ToUpper();//ToUpper方法将目标字符转换成大写
             Console.WriteLine(str7);//abc
+
+            //字符串的点方法(ToUpper方法将目标字符转换成大写(重新赋值,转换成功))
+            string str8 = "abc";
+            str8 = str8.ToUpper();
+            Console.WriteLine(str8);//ABC
             Console.Read();
         }
     }
