@@ -109,6 +109,13 @@ namespace Class02_DataType
             a2 += 1;
             Console.WriteLine(a2);//-2147483648 //溢出
 
+            //数据转换:数据溢出检查checked
+            int a3 = int.MinValue;
+            checked
+            {
+                a3 -= 1;//算术运算导致溢出
+            }
+            Console.WriteLine(a3);
             Console.Read();
         }
     }
