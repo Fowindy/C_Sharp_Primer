@@ -33,10 +33,11 @@ namespace Class02_DataType
             string str = "123";
             char ch = '1';
 
-            //关于转义字符(\n换行)
-            string str1 = "123\n123";//换行
-            char ch1 = '\n';
+            //关于转义字符(\n换行)(\t制表符)
+            string str1 = "123\t123";//对齐
+            string str2 = "1234\t123";
             Console.WriteLine(str1);
+            Console.WriteLine(str2);
             Console.Read();
         }
     }
