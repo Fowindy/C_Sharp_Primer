@@ -82,6 +82,10 @@ namespace Class02_DataType
             }
             计时器.Stop();//结束计时
             Console.WriteLine(计时器.ElapsedMilliseconds);//14471  //显示用时
+
+            //类型的分类:
+            //值类型:所有基本类型都是
+            //引用类型:目前为止string
             Console.Read();
         }
     }
