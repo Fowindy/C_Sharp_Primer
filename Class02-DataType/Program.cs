@@ -123,13 +123,29 @@ namespace Class02_DataType
             b4 = a4;
             Console.WriteLine(b4);//2
 
-            //Parse用法:字符串的解析转换(如转换不成功则报异常)
+            //TryParse用法:字符串的解析转换(如解析成功返回true并返回转换成功的结果,反之亦然)
             var str11 = Console.ReadLine();//34//因ReadLine的返回值已确定为string,所以可用var
             var str12 = Console.ReadLine();//56
-            int a11 = int.Parse(str11);//34
-            int a12 = int.Parse(str12);//56
+            int a11;
+            int a12;
+            if (int.TryParse(str11,out a11))
+            {
+                Console.WriteLine(a11);
+            }
+            else
+            {
+                Console.WriteLine("第一个数解析失败!");
+            }
+            if (int.TryParse(str12, out a12))
+            {
+                Console.WriteLine(a12);
+            }
+            else
+            {
+                Console.WriteLine("第二个数解析失败!");
+            }
             Console.WriteLine(str11 + str12);//3456  //字符串连接
-            Console.WriteLine(a11 + a12);//90   //字符串连接
+            Console.WriteLine(a11 + a12);//90   //转换值相加
             Console.Read();
         }
     }
