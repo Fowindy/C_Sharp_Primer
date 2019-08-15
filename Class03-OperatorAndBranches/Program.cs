@@ -11,7 +11,7 @@ namespace Class03_OperatorAndBranches
         static void Main(string[] args)
         {
             //编程的三大结构:顺序,分支,循环
-            //编程的三大结构_分支:(if switch)(if两种情况:不含嵌套if)
+            //编程的三大结构_分支:(if switch)(if三种情况:含嵌套if)
             int a = int.Parse(Console.ReadLine());
             if (a > 10)
             {
@@ -19,7 +19,16 @@ namespace Class03_OperatorAndBranches
             }
             else
             {
-                Console.WriteLine("a小于或等于10");
+                #region 嵌套if
+                if (a == 10)
+                {
+                    Console.WriteLine("a等于10");
+                }
+                else
+                {
+                    Console.WriteLine("a小于10");
+                } 
+                #endregion
             }
             Console.Read();
         }
