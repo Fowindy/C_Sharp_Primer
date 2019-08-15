@@ -89,6 +89,7 @@ namespace Class02_DataType
 
             //null没有引用任何有效对象(null专用于引用类型)
             string str10 = string.Empty;//string.Empty等价于''
+            //string.Empty 没有;null 空,没有输入
             Console.Read();
         }
     }
