@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;//使用秒表需要引用Diagnostics
 
 namespace Class02_DataType
 {
@@ -64,6 +65,9 @@ namespace Class02_DataType
             string str8 = "abc";
             str8 = str8.ToUpper();
             Console.WriteLine(str8);//ABC
+
+            //string类型和StringBuilder的区别(使用秒表来测量两者运行效率)
+            Stopwatch 计时器 = new Stopwatch();
             Console.Read();
         }
     }
