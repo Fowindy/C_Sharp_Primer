@@ -67,7 +67,15 @@ namespace Class02_DataType
             Console.WriteLine(str8);//ABC
 
             //string类型和StringBuilder的区别(使用秒表来测量两者运行效率)
-            Stopwatch 计时器 = new Stopwatch();
+            Stopwatch 计时器 = new Stopwatch();//不建议用中文(为了演示)
+            计时器.Start();//开始计时
+            string str9 = string.Empty;//空相当于null
+            for (int i = 0; i < 100000; i++)
+            {
+                str9 += i.ToString();//012345678......
+            }
+            计时器.Stop();//结束计时
+            Console.WriteLine(计时器.ElapsedMilliseconds);//14471  //显示用时
             Console.Read();
         }
     }
