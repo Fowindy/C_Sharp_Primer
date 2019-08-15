@@ -91,7 +91,8 @@ namespace Class02_DataType
             string str10 = string.Empty;//string.Empty等价于''
             //string.Empty 没有;null 空,没有输入
 
-            //
+            //可空类型1(专用于值类型_直接等于null会报错,null只用于引用类型)
+            int number = null;
             Console.Read();
         }
     }
