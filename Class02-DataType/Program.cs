@@ -113,9 +113,15 @@ namespace Class02_DataType
             int a3 = int.MinValue;
             checked
             {
-                a3 -= 1;//算术运算导致溢出
+                //a3 -= 1;//算术运算导致溢出
             }
             Console.WriteLine(a3);
+
+            //数据转换:低转高(无需强制转换)
+            int a4 = 2;
+            long b4 = 2345;
+            b4 = a4;
+            Console.WriteLine(b4);//2
             Console.Read();
         }
     }
