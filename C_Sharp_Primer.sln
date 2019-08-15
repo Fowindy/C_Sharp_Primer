@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class00_MainContent", "Clas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class02-DataType", "Class02-DataType\Class02-DataType.csproj", "{1BD34DDE-879D-4BB0-8557-C7A8027D8F2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class03-OperatorAndBranches", "Class03-OperatorAndBranches\Class03-OperatorAndBranches.csproj", "{7E540933-03BD-4912-98A0-6DDF869394DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1BD34DDE-879D-4BB0-8557-C7A8027D8F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BD34DDE-879D-4BB0-8557-C7A8027D8F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BD34DDE-879D-4BB0-8557-C7A8027D8F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E540933-03BD-4912-98A0-6DDF869394DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E540933-03BD-4912-98A0-6DDF869394DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E540933-03BD-4912-98A0-6DDF869394DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E540933-03BD-4912-98A0-6DDF869394DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
