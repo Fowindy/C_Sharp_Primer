@@ -33,6 +33,12 @@ namespace Class05_MethodsAndParameters
             int temp;
             temp = num1;num1 = num2;num2 = temp;
         }
+
+        //传值传引用的讲解2:
+        static void Add(string str)
+        {
+            str += "!";
+        }
         static void Main(string[] args)
         {
             var list = new List<int>();
@@ -49,6 +55,10 @@ namespace Class05_MethodsAndParameters
             int b = 2;
             Swap(ref a, ref b);//交换成功//传引用:不再是复制关系,而是公用关系;指向了相同的内存地址,对相同的内存地址进行修改
             Console.WriteLine("a={0},b={1}", a, b);
+
+            string str = "123";
+            Add(str);
+            Console.WriteLine(str);//123//string虽是引用类型,但有字符串的不变特性,甚至可以粗暴的把string归结到值类型
             Console.Read();
         }
     }
