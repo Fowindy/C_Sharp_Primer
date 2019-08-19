@@ -10,12 +10,14 @@ namespace Class03_OperatorAndBranches
     {
         static void Main(string[] args)
         {
-            //条件运算符(三元操作符)(使用条件运算符):
+            //条件运算符(三元操作符)(使用条件运算符:三个数字中最大的):
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("最大的数字是:{0}",a > b ? a : b);
-
+            //Console.WriteLine("最大的数字是:{0}",((c > (a > b ? a : b))) ? c : (a > b ? a : b));
+            //等价于:
+            Console.WriteLine("最大的数字是:{0}", a > b ? (a > c ? a : c) : (b > c ? b : c));
             /*
              * 关系表达式(二元操作符):
              * >(大于),<(小于),小于等于(<=),大于等于(>=),==(等于等于),!=(不等于)
