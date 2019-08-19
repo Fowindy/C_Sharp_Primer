@@ -19,6 +19,8 @@ namespace Class03_OperatorAndBranches
              * 逻辑运算符(二元操作符):
              * ||(或):同假则假
              * &&(且):同真则真
+             * 
+             * 逻辑求反:!(一元操作符,优先级高于二元)
              */
             Console.Read();
         }
