@@ -16,15 +16,13 @@ namespace Class05_MethodsAndParameters
         //有static为静态方法,无static叫动态方法;静态方法无法调用动态方法
         //动态方法既可以调用动态方法也可以调用静态方法;静态方法只能调用静态方法;
 
-        //例子2-1:单纯返回一个值
-        static string TestFunc()
+        //例子2-2:什么都不返回
+        static void TestFunc()
         {
-            return "123";
         }
         static void Main(string[] args)
         {
-            //调用TestFunc并打印
-            Console.WriteLine(TestFunc());//123
+            TestFunc();
             //静态方法可以调用静态方法
             ThisIsATest();
             /*
