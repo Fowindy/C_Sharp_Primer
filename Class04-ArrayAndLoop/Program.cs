@@ -85,8 +85,30 @@ namespace Class04_ArrayAndLoop
                     Console.WriteLine("{0}这个数不存在",num);
                 }
             }
-            Console.Read();
             #endregion
+
+            #region 问题5:数组排序(选择排序)
+            int temp;
+            for (int i = 0; i < N-1; i++)
+            {
+                for (int j = i + 1; j < N; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("开始排序:");
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
+            Console.Read();
+
         }
     }
 }
