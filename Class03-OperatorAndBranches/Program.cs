@@ -10,8 +10,20 @@ namespace Class03_OperatorAndBranches
     {
         static void Main(string[] args)
         {
-            //布尔表达式:求值结果为false或true的表达式
-            bool exp = 2 <= 2;//true(2等于2或2小于2)
+            //条件运算符(三元操作符)(不使用条件运算符):
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+
+            bool isA大于B = a > b;
+            if (isA大于B)
+            {
+                Console.WriteLine("A大于B");
+            }
+            else
+            {
+                Console.WriteLine("A小于等于B");
+            }
+
             /*
              * 关系表达式(二元操作符):
              * >(大于),<(小于),小于等于(<=),大于等于(>=),==(等于等于),!=(不等于)
