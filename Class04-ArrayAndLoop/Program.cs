@@ -40,7 +40,7 @@ namespace Class04_ArrayAndLoop
             var r = new Random();
             for (int i = 0; i < N; i++)
             {
-                a[i] = r.Next()%10;//取余方式
+                a[i] = r.Next()%20;
             }
 
             foreach (var item in a)
@@ -57,7 +57,20 @@ namespace Class04_ArrayAndLoop
                 sum += a[i];
             }
             Console.WriteLine(sum);
+            #endregion
+
+            #region 问题3:求数组中最大的数
+            int max = a[0];
+            for (int i = 0; i < N; i++)
+            {
+                if (a[i] >= max)
+                {
+                    max = a[i];
+                }
+            }
+            Console.WriteLine(max);
             Console.Read();
+
             #endregion
         }
     }
