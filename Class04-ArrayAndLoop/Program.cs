@@ -10,102 +10,13 @@ namespace Class04_ArrayAndLoop
     {
         static void Main(string[] args)
         {
-            #region 为什么使用数组(举例:斐波那契数列_使用数组+Foreach循环缺点是,必须是全部,管控不了起点,不建议使用_终点自定义)
-            /*
-            * 为什么使用数组?
-            * 
-            * 举个例子:斐波那契数列
-            * 1 1 2 3 5 8 13......
-            */
-            const int N = 38;
-            int[] a = new int[N];
-            a[1] = 1;
-            a[2] = 1;
-
-            for (int i = 3; i < N; i++)
+            #region 问题6:解决一个数学问题:1/2+2/3+3/4+...+99/100
+            double sum = 0;
+            for (int i = 1; i <= 99; i++)
             {
-                a[i] = a[i - 1] + a[i - 2];
-            }
-
-            foreach (var item in a)//缺点是,必须是全部,管控不了起点
-            {
-                Console.WriteLine(item);
-            }
-
-
-
-            #endregion
-
-            #region 问题1:如何生成一堆随机数(0-9)_取余方式
-            var r = new Random();
-            for (int i = 0; i < N; i++)
-            {
-                a[i] = r.Next(0,51);
-            }
-
-            foreach (var item in a)
-            {
-                Console.WriteLine(item);
-            }
-
-            #endregion
-
-            #region 问题2:求数列的和
-            int sum = 0;
-            for (int i = 0; i < N; i++)
-            {
-                sum += a[i];
+                sum += (double)i / (i + 1);//强制转换,类型提升
             }
             Console.WriteLine(sum);
-            #endregion
-
-            #region 问题3:求数组中最大的数
-            int max = a[0];
-            for (int i = 0; i < N; i++)
-            {
-                if (a[i] >= max)
-                {
-                    max = a[i];
-                }
-            }
-            Console.WriteLine(max);
-            #endregion
-
-            #region 问题4:查找数组中某一个数是否存在
-            int num = 50;
-            for (int i = 0; i < N; i++)
-            {
-                if (a[i] == num)
-                {
-                    Console.WriteLine("{0}这个数存在",num);
-                    break;
-                }
-                if (i == N - 1 && a[i] != num)
-                {
-                    Console.WriteLine("{0}这个数不存在",num);
-                }
-            }
-            #endregion
-
-            #region 问题5:数组排序(选择排序)
-            int temp;
-            for (int i = 0; i < N-1; i++)
-            {
-                for (int j = i + 1; j < N; j++)
-                {
-                    if (a[i] > a[j])
-                    {
-                        temp = a[i];
-                        a[i] = a[j];
-                        a[j] = temp;
-                    }
-                }
-            }
-            Console.WriteLine("开始排序:");
-            foreach (var item in a)
-            {
-                Console.WriteLine(item);
-            }
             #endregion
             Console.Read();
 
