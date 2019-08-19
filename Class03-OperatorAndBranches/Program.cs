@@ -12,6 +12,9 @@ namespace Class03_OperatorAndBranches
         {
             //空结合运算符(二元操作符):(一般用于默认路径,有新路径则用新的,没有新的则用默认的)
 
+            string fileName = null;
+            fileName = fileName ?? "default.txt";
+            Console.WriteLine(fileName);
             /*
              * 关系表达式(二元操作符):
              * >(大于),<(小于),小于等于(<=),大于等于(>=),==(等于等于),!=(不等于)
