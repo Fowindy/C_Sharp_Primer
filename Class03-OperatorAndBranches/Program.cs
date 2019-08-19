@@ -11,11 +11,11 @@ namespace Class03_OperatorAndBranches
         static void Main(string[] args)
         {
             //编程的三大结构:顺序,分支,循环
-            //编程的三大结构_分支:Switch
+            //编程的三大结构_分支:Switch(极少使用goto的贯通情况)
             int a = int.Parse(Console.ReadLine());
             switch (a)
             {
-                case 1:Console.WriteLine("数字1");break;
+                case 1:Console.WriteLine("数字1");goto case 2;
                 case 2:Console.WriteLine("数字2");break;
                 default://默认,其他情况
                     Console.WriteLine("数字未知");break;
