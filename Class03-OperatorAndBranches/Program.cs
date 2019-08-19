@@ -10,19 +10,11 @@ namespace Class03_OperatorAndBranches
     {
         static void Main(string[] args)
         {
-            //条件运算符(三元操作符)(不使用条件运算符):
+            //条件运算符(三元操作符)(使用条件运算符):
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
 
-            bool isA大于B = a > b;
-            if (isA大于B)
-            {
-                Console.WriteLine("A大于B");
-            }
-            else
-            {
-                Console.WriteLine("A小于等于B");
-            }
+            Console.WriteLine("最大的数字是:{0}",a > b ? a : b);
 
             /*
              * 关系表达式(二元操作符):
