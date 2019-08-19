@@ -47,7 +47,7 @@ namespace Class05_MethodsAndParameters
 
             int a = 1;
             int b = 2;
-            Swap(ref a, ref b);//传引用:不再是复制关系,而是公用关系;指向了相同的内存地址,对相同的内存地址进行修改
+            Swap(ref a, ref b);//交换成功//传引用:不再是复制关系,而是公用关系;指向了相同的内存地址,对相同的内存地址进行修改
             Console.WriteLine("a={0},b={1}", a, b);
             Console.Read();
         }
