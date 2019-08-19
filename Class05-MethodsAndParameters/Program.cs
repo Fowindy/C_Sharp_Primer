@@ -39,6 +39,12 @@ namespace Class05_MethodsAndParameters
         {
             str += "!";
         }
+
+        //传值传引用的讲解3:引用类型加ref和不加ref基本无区别,值类型加ref和不加ref区别很大
+        static void Add(List<int> list)
+        {
+            list.Add(2);
+        }
         static void Main(string[] args)
         {
             var list = new List<int>();
@@ -59,6 +65,16 @@ namespace Class05_MethodsAndParameters
             string str = "123";
             Add(str);
             Console.WriteLine(str);//123//string虽是引用类型,但有字符串的不变特性,甚至可以粗暴的把string归结到值类型
+
+            var lists = new List<int>();
+            lists.Add(1);
+            Add(lists);
+            foreach (var item in lists)
+            {
+                Console.WriteLine(item);
+            }
+            //引用类型加ref和不加ref无区别
+            //值类型加ref和不加ref区别很大
             Console.Read();
         }
     }
