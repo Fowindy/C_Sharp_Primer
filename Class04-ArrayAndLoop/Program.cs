@@ -10,7 +10,7 @@ namespace Class04_ArrayAndLoop
     {
         static void Main(string[] args)
         {
-            #region 为什么使用数组(举例:斐波那契数列_使用数组+For循环实现_终点自定义)
+            #region 为什么使用数组(举例:斐波那契数列_使用数组+Foreach循环缺点是,必须是全部,管控不了起点,不建议使用_终点自定义)
             /*
             * 为什么使用数组?
             * 
@@ -27,10 +27,11 @@ namespace Class04_ArrayAndLoop
                 a[i] = a[i - 1] + a[i - 2];
             }
 
-            for (int i = 1; i < N; i++)
+            foreach (var item in a)//缺点是,必须是全部,管控不了起点
             {
-                Console.WriteLine(a[i]);
+                Console.WriteLine(item);
             }
+
 
             Console.Read();
             #endregion
