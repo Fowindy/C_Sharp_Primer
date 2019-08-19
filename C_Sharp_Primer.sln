@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class03-OperatorAndBranches
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class04-ArrayAndLoop", "Class04-ArrayAndLoop\Class04-ArrayAndLoop.csproj", "{78C367E5-5741-443B-A221-10393CD61127}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class05-MethodsAndParameters", "Class05-MethodsAndParameters\Class05-MethodsAndParameters.csproj", "{04505B6F-440A-47AA-95D0-2438A0FD4A91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{78C367E5-5741-443B-A221-10393CD61127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C367E5-5741-443B-A221-10393CD61127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C367E5-5741-443B-A221-10393CD61127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04505B6F-440A-47AA-95D0-2438A0FD4A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04505B6F-440A-47AA-95D0-2438A0FD4A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04505B6F-440A-47AA-95D0-2438A0FD4A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04505B6F-440A-47AA-95D0-2438A0FD4A91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
