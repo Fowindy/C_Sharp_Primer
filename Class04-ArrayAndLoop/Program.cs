@@ -10,16 +10,26 @@ namespace Class04_ArrayAndLoop
     {
         static void Main(string[] args)
         {
-            #region 问题6:解决一个数学问题:1/2+2/3+3/4+...+99/100
-            double sum = 0;
-            for (int i = 1; i <= 99; i++)
+            #region list集合
+            var nums = new List<int>();//list集合实例化
+            nums.Add(1);
+            nums.Add(2);
+            nums.Add(3);
+
+            //对list集合进行正序排列
+            nums.Sort();
+
+            //输出正序排列之后的结果:
+            foreach (var num in nums)
             {
-                sum += (double)i / (i + 1);//强制转换,类型提升
+                Console.WriteLine(num);
             }
-            Console.WriteLine(sum);
+
+            //对list集合查最大值,最小值,平均值
+            Console.WriteLine("集合中的最大值是:{0},最小值是:{1},平均值是:{2}", nums.Max(), nums.Min(), nums.Average());
+
             #endregion
             Console.Read();
-
         }
     }
 }
