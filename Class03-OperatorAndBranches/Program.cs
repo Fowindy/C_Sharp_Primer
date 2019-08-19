@@ -12,6 +12,10 @@ namespace Class03_OperatorAndBranches
         {
             //布尔表达式:求值结果为false或true的表达式
             bool exp = 2 <= 2;//true(2等于2或2小于2)
+            /*
+             * 关系表达式(二元操作符):
+             * >(大于),<(小于),小于等于(<=),大于等于(>=),==(等于等于),!=(不等于)
+             */
             Console.Read();
         }
     }
