@@ -48,6 +48,15 @@ namespace Class04_ArrayAndLoop
                 Console.WriteLine(item);
             }
 
+            #endregion
+
+            #region 问题2:求数列的和
+            int sum = 0;
+            for (int i = 0; i < N; i++)
+            {
+                sum += a[i];
+            }
+            Console.WriteLine(sum);
             Console.Read();
             #endregion
         }
