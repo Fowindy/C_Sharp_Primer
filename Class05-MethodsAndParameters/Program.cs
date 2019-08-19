@@ -1,6 +1,7 @@
 ﻿using Class05_MethodsAndParameters2;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,18 +10,29 @@ namespace Class05_MethodsAndParameters
 {
     class Program
     {
-        //例子7-1:再论斐波那契数列_递归实现
-        static long Fibonacci(long n)
+        //例子7-2:统计目标目录下文件总数_递归实现_有异常
+        /*
+         * 理解 file和directory
+         */
+        static long FileOrDirCount(string path)
         {
-            if (n == 1 || n == 2) return 1;
-            return Fibonacci(n - 1) + Fibonacci(n - 2);
+            long count = 0;
+            //统计文件file的个数:
+            var files = Directory.GetFiles(path);
+            count += files.Length;
+
+            //统计子目录directory的个数
+            var dirs = Directory.GetDirectories(path);
+            foreach (var dir in dirs)
+            {
+                count += FileOrDirCount(dir);
+            }
+            return count;
         }
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 20; i++)
-            {
-                Console.WriteLine(Fibonacci(i));
-            }
+            Console.WriteLine("正在统计中...");
+            Console.WriteLine("该目录文件总数为:{0}", FileOrDirCount("D:/"));
             Console.Read();
         }
     }
