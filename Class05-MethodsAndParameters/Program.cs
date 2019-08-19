@@ -41,9 +41,11 @@ namespace Class05_MethodsAndParameters
         }
 
         //传值传引用的讲解3:引用类型加ref和不加ref基本无区别,值类型加ref和不加ref区别很大
-        static void Add(List<int> list)
+        //out返回添加成功与否
+        static void Add(List<int> list,out bool success)
         {
             list.Add(2);
+            success = true;
         }
         static void Main(string[] args)
         {
@@ -66,15 +68,24 @@ namespace Class05_MethodsAndParameters
             Add(str);
             Console.WriteLine(str);//123//string虽是引用类型,但有字符串的不变特性,甚至可以粗暴的把string归结到值类型
 
+            bool j = false;
             var lists = new List<int>();
             lists.Add(1);
-            Add(lists);
+            Add(lists,out j);
+            if (j)
+            {
+                Console.WriteLine("添加成功");
+            }
             foreach (var item in lists)
             {
                 Console.WriteLine(item);
             }
             //引用类型加ref和不加ref无区别
             //值类型加ref和不加ref区别很大
+
+            //为什么要使用out参数?函数理论上最多只能返回一个值,当需要返回多个值时使用out参数
+            int i;
+            int.TryParse("1", out i);
             Console.Read();
         }
     }
