@@ -40,7 +40,7 @@ namespace Class04_ArrayAndLoop
             var r = new Random();
             for (int i = 0; i < N; i++)
             {
-                a[i] = r.Next()%20;
+                a[i] = r.Next(0,51);
             }
 
             foreach (var item in a)
@@ -69,8 +69,23 @@ namespace Class04_ArrayAndLoop
                 }
             }
             Console.WriteLine(max);
-            Console.Read();
+            #endregion
 
+            #region 问题4:查找数组中某一个数是否存在
+            int num = 50;
+            for (int i = 0; i < N; i++)
+            {
+                if (a[i] == num)
+                {
+                    Console.WriteLine("{0}这个数存在",num);
+                    break;
+                }
+                if (i == N - 1 && a[i] != num)
+                {
+                    Console.WriteLine("{0}这个数不存在",num);
+                }
+            }
+            Console.Read();
             #endregion
         }
     }
