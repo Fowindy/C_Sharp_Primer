@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Class05_MethodsAndParameters2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,15 @@ namespace Class05_MethodsAndParameters
              * 为什么使用方法?
              * 让程序简单明了,模块化,功能更内聚,将重复的逻辑放在一起
              */
+
+            //例子1:写一个什么都不做的函数
+            //理解 方法名 书写方法
+
+            //快捷键:ctrl + tab 切换工程
+            //快捷键:alt + tab 切换任务
+            Class1.Func();
+
+            System.Console.Read();
         }
     }
 }
