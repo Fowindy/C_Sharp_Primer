@@ -11,12 +11,13 @@ namespace Class05_MethodsAndParameters
     {
         //例子1:写一个什么都不做的函数(方法),方法是在类里面
         //无static为动态方法
-        void Test() { }
+        static void Test() { }
         //有static为静态方法,无static叫动态方法;静态方法无法调用动态方法
-        //动态方法既可以调用动态方法也可以调用静态方法;
-        //静态方法只能调用静态方法;
+        //动态方法既可以调用动态方法也可以调用静态方法;静态方法只能调用静态方法;
         static void Main(string[] args)
         {
+            //静态方法可以调用静态方法
+            Test();
             /*
              * 方法是什么?
              * 首先看看方法涉及的基本元素:
