@@ -33,14 +33,14 @@ namespace Class04_ArrayAndLoop
             }
 
 
-            
+
             #endregion
 
-            #region 问题1:如何生成一堆随机数(0-9)_区间方式
+            #region 问题1:如何生成一堆随机数(0-9)_取余方式
             var r = new Random();
             for (int i = 0; i < N; i++)
             {
-                a[i] = r.Next(0, 10);//含前不含后
+                a[i] = r.Next()%10;//取余方式
             }
 
             foreach (var item in a)
