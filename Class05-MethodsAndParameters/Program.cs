@@ -9,40 +9,31 @@ namespace Class05_MethodsAndParameters
 {
     class Program
     {
-        //例子1:写一个什么都不做的函数(方法),方法是在类里面
-        //无static为动态方法
-        //方法的规范命名(每个单词的首字母大写)
-        static void ThisIsATest() { }
-        //有static为静态方法,无static叫动态方法;静态方法无法调用动态方法
-        //动态方法既可以调用动态方法也可以调用静态方法;静态方法只能调用静态方法;
+        /*
+         * 例子3:求平均值
+         * 理解参数:
+         * $参数的名字可以不一致
+         * $传值,传引用ref,out参数
+         */
 
-        //例子2-2:什么都不返回
-        static void TestFunc()
+        static double Average(List<int> list)//传一个list类型的列表进来
         {
+            int sum = 0;
+            foreach (var item in list)
+            {
+                sum += item;
+            }
+            return (double)sum / list.Count;
         }
         static void Main(string[] args)
         {
-            TestFunc();
-            //静态方法可以调用静态方法
-            ThisIsATest();
-            /*
-             * 方法是什么?
-             * 首先看看方法涉及的基本元素:
-             * System.Console.Write("name");
-             * 命名空间  类     方法  参数
-             * 
-             * 为什么使用方法?
-             * 让程序简单明了,模块化,功能更内聚,将重复的逻辑放在一起
-             */
+            var list = new List<int>();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(5);
 
-            //例子1:写一个什么都不做的函数
-            //理解 方法名 书写方法
-
-            //快捷键:ctrl + tab 切换工程
-            //快捷键:alt + tab 切换任务
-
-            Class1.Func();
-
+            Console.WriteLine("list列表的平均值为:{0}",Average(list));//2.75
             Console.Read();
         }
     }
