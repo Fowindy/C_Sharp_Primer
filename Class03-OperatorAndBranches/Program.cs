@@ -21,6 +21,9 @@ namespace Class03_OperatorAndBranches
              * &&(且):同真则真
              * 
              * 逻辑求反:!(一元操作符,优先级高于二元)
+             * 
+             * 条件运算符(三元操作符):
+             * 布尔表达式?A:B;
              */
             Console.Read();
         }
