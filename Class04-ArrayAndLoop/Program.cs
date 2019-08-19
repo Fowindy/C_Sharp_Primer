@@ -10,7 +10,7 @@ namespace Class04_ArrayAndLoop
     {
         static void Main(string[] args)
         {
-            #region 为什么使用数组(举例:斐波那契数列_使用数组循环实现_终点自定义)
+            #region 为什么使用数组(举例:斐波那契数列_使用数组+For循环实现_终点自定义)
             /*
             * 为什么使用数组?
             * 
@@ -22,18 +22,14 @@ namespace Class04_ArrayAndLoop
             a[1] = 1;
             a[2] = 1;
 
-            int i = 3;
-            while (i != N)
+            for (int i = 3; i < N; i++)
             {
                 a[i] = a[i - 1] + a[i - 2];
-                i++;
             }
 
-            int j = 1;
-            while (j != N)
+            for (int i = 1; i < N; i++)
             {
-                Console.WriteLine(a[j]);
-                j++;
+                Console.WriteLine(a[i]);
             }
 
             Console.Read();
