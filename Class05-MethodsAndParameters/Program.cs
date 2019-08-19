@@ -28,7 +28,7 @@ namespace Class05_MethodsAndParameters
         }
 
         //传值传引用的讲解:
-        static void Swap(int num1,int num2)
+        static void Swap(ref int num1,ref int num2)
         {
             int temp;
             temp = num1;num1 = num2;num2 = temp;
@@ -47,7 +47,7 @@ namespace Class05_MethodsAndParameters
 
             int a = 1;
             int b = 2;
-            Swap(a, b);//值传递:相当于复制过来的,是一份拷贝,外面和里面不搭噶;值传递的本质是复制;
+            Swap(ref a, ref b);//传引用:不再是复制关系,而是公用关系;指向了相同的内存地址,对相同的内存地址进行修改
             Console.WriteLine("a={0},b={1}", a, b);
             Console.Read();
         }
