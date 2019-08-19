@@ -10,11 +10,11 @@ namespace Class05_MethodsAndParameters
 {
     class Program
     {
-        //例子8-1:继续修改,加入计算文件或计算目录的开关_默认参数_验证OK
+        //例子8-2:继续修改,加入计算文件或计算目录的开关_后缀目标文件计算_验证OK
         /*
          * 理解 file和directory
          */
-        static long FileOrDirCount(string path,bool onlyFiles,bool onlyDir,String extension = ".txt")//默认参数
+        static long FileOrDirCount(string path,bool onlyFiles,bool onlyDir,String extension)
         {
             long count = 0;
             //捕获异常:try{}catch(){}finally{}
@@ -65,7 +65,7 @@ namespace Class05_MethodsAndParameters
         static void Main(string[] args)
         {
             Console.WriteLine("正在统计中...");
-            Console.WriteLine("该目录文件总数为:{0};文件夹的个数为:{1};", FileOrDirCount(@"J:\Documents\学习笔记",true,false), FileOrDirCount(@"J:\Documents\学习笔记",false,true));
+            Console.WriteLine("该目录文件总数为:{0};文件夹的个数为:{1};目标文件的个数为:{2}", FileOrDirCount(@"J:\Documents\学习笔记",true,false,null), FileOrDirCount(@"J:\Documents\学习笔记",false,true,null), FileOrDirCount(@"J:\Documents\学习笔记", true, false, ".txt"));
             Console.Read();
         }
     }
