@@ -28,6 +28,12 @@ namespace Class04_ArrayAndLoop
             //对list集合查最大值,最小值,平均值
             Console.WriteLine("集合中的最大值是:{0},最小值是:{1},平均值是:{2}", nums.Max(), nums.Min(), nums.Average());
 
+            //continue的使用
+            foreach (var num in nums)
+            {
+                if (num != 2) continue;
+                Console.WriteLine(num);//2
+            }
             #endregion
             Console.Read();
         }
