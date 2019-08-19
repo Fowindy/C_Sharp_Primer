@@ -10,14 +10,8 @@ namespace Class03_OperatorAndBranches
     {
         static void Main(string[] args)
         {
-            //条件运算符(三元操作符)(使用条件运算符:三个数字中最大的):
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int c = int.Parse(Console.ReadLine());
+            //空结合运算符(二元操作符):(一般用于默认路径,有新路径则用新的,没有新的则用默认的)
 
-            //Console.WriteLine("最大的数字是:{0}",((c > (a > b ? a : b))) ? c : (a > b ? a : b));
-            //等价于:
-            Console.WriteLine("最大的数字是:{0}", a > b ? (a > c ? a : c) : (b > c ? b : c));
             /*
              * 关系表达式(二元操作符):
              * >(大于),<(小于),小于等于(<=),大于等于(>=),==(等于等于),!=(不等于)
@@ -30,6 +24,9 @@ namespace Class03_OperatorAndBranches
              * 
              * 条件运算符(三元操作符):
              * 布尔表达式?A:B;
+             * 
+             * 空结合运算符(二元操作符):
+             * 表达式1??表达式2   //表达式1是否为null,如果为null就使用表达式2的结果作为表达式1的默认值
              */
             Console.Read();
         }
