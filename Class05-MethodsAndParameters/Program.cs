@@ -62,6 +62,9 @@ namespace Class05_MethodsAndParameters
             }
             return count;
         }
+
+        //例子9:Main的参数,返回值:
+        //返回值可以是void或者int类型,返回0为程序运行成功,返回其他的负数为运行出错
         static void Main(string[] args)
         {
             Console.WriteLine("正在统计中...");
